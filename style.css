@@ -1,0 +1,57 @@
+*{
+  font-family: sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Container{
+  text-align: center;
+  height: 600px;
+  width: 290px;
+  background-color: darkslateblue;
+}
+
+.RegisterBtn{
+  background-color: #65E765;
+  color: white;
+  height: 30px;
+  width: 210px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.LoginBtn{
+  background-color: white;
+  color: #65E765;
+  height: 30px;
+  width: 210px;
+  border-radius: 20px;
+}
+
+.DoctorImg{
+  height: 260px;
+  width: 230px;
+  position: relative;
+  
+}
+.DoctorImg img{
+  height: 230px;
+  width: 200px;
+}
+
+.ViewDoctorBtn{
+  margin-top: 110px;
+}
+
+.ViewDoctorBtn button{
+  background-color: white;
+  color: #65E765;
+  height: 30px;
+  width: 210px;
+  border-radius: 20px;
+}
+

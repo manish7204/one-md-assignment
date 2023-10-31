@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Register.css">
+</head>
+
+<body>
+
+    <div class="contianer">
+        <div class="HOne">
+            <h1>Registration</h1>
+        </div>
+
+        <h3>Contact Information</h>
+            <br><br>
+            <div class="inputTags">
+                <form>
+                <label>Mobile Number</label><br>
+                <input type="tel" id="TelNum">
+                <br> <br>
+                <label>Email Addrees</label><br>
+                <input type="email" id="Email" onchange="validateEmailAddress(this.value)">
+                <p id="EmailCheck"></p>
+                <br> <br>
+                <label>Full Name</label><br>
+                <input type="text" id="FullName">
+                <br> <br>
+                <label>Password</label><br>
+                <input type="password" id="Password" onchange="checkPassword()">
+                <p id="PasswordCheck"></p>
+                <br> <br>
+                <label>Confirm Password</label><br>
+                <input type="password" id="ConformPassword" onchange="passwordValidate()">
+                <p id="ConformPasswordCheck"></p>
+                <br> <br>
+                <label>Date Of Graduation</label><br>
+                <input type="date" id="DateOfGraduation">
+                <br> <br>
+                <label>Degree 1</label><br>
+                <input type="text" id="DegreeOne">
+
+
+                <div id="AddDegreeInput">
+
+                </div>
+                <br>
+                <button class="AddAnotherBtn" onclick="AddanotherDegree(event)">Add Another</button>
+                <br><br>
+
+
+                <div class="ConsultfeeDiv">
+                    <label>Online Consult Fee</label><br>
+                    <input type="number" id="OnlineFee" placeholder="&#x20b9;">
+                    <br> <br>
+                    <label>In Person Consult</label><br>
+                    <input type="number" id="InPersonfee" placeholder="&#x20b9;">
+                    <br> <br>
+
+                    <a class="SubmitBtn" id="submitBtn"  onclick="submitAndRedirect()">Submit</a>
+                    <!-- <button onclick="deletData()">Delete</button> -->
+                </div>
+            </form>
+            </div>
+    </div>
+    <script src="Register.js"></script>
+
+</body>
+
+</html>

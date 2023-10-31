@@ -1,0 +1,153 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* .container{
+    background-color: cadetblue;
+    position: relative;
+    right: 50%;
+    height: auto;
+    width: 500px;
+} */
+
+.Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   /* margin-left: 36%; */
+   
+
+}
+
+.cards {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    margin: 20px;
+    padding: 10px;
+    height: 310px;
+    max-width: 350px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px lightblue;
+    /* flex-direction: column; */
+
+}
+
+.img {
+    /* flex: 1; */
+    margin-top: 0px;
+}
+
+#pTag{
+    margin-left: 20px;
+}
+
+.ProfilePic {
+    position: relative;
+    background-color: black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+
+.experience {
+    text-align: center;
+}
+
+.otherInfo {
+    flex: 2;
+    padding: 0 10px;
+    height: 100px;
+    width: 130px;
+    position: relative;
+    /* top: 20%; */
+    left: 37%;
+    bottom: 60%;
+}
+
+.fess {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    /* top: 75%; */
+    left: 40%;
+    bottom: 68%;
+    height: 280px;
+    
+}
+
+.fess p {
+    margin: 0;
+}
+
+.bookBtn{
+    margin-top: 30px;
+    position: relative;
+    right: 40%;
+    height: 40px;
+    width: 347px;
+    background-color: aquamarine;
+    border-radius: 10px;
+
+}
+
+.LoadMore{
+    height: 30px;
+    background-color: cadetblue;
+    width: 180px;
+    margin-left: 1255px;
+    border-radius: 9px;
+}
+
+/* .container {
+    background-color: white;
+    margin: 10px auto; 
+    display: block;
+} */
+.LoadMore {
+    margin: 10px auto; 
+  justify-content: center;
+    display: block; 
+}
+
+.head{
+    /* position: relative;
+    left: 13%; */
+    text-align: center;
+    }
+
+.HOne{
+    
+}
+
+.main{
+    background-color: whitesmoke;
+    width: 420px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+/* @media screen and (max-width: 768px) {
+    .Container {
+        margin-left: 10%; /* Adjust margin for smaller screens */
+    /* } */
+/* 
+    .cards {
+        max-width: 100%; /* Ensure the cards don't overflow */
+    /* } */ 
+
+    /* .otherInfo, .fess { */
+        /* left: 0; 
+        right: 0; 
+        text-align: center; Center text */
+    /* }
+} */
