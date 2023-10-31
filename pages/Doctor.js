@@ -4,12 +4,24 @@ const apiUrl = 'http://localhost:3000/users';
 let start = 0;
 let limit = 5;
 
+let totalItems = 0;
+let loadedItems = 0;
+
+
+
 function fetchCrad(start, limit) {
+    let btn=  document.getElementsByClassName('LoadMore');
     fetch(`${apiUrl}?_start=${start}&_limit=${limit}`)
         .then(response => response.json())
         .then(data => {
+            totalItems=data.length;
             const container = document.querySelector('.Container');
             console.log(data)
+
+            if (totalItems === 0) {
+                alert("data is empty")
+            }
+          
 
             data.forEach(doctor => {
                 console.log(doctor)
